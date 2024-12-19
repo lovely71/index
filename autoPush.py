@@ -3,7 +3,7 @@ import subprocess
 import time
 
 def git_push_with_retry():
-    max_retries = 10
+    max_retries = 50
     retry_delay = 10
     for attempt in range(max_retries):
         try:
